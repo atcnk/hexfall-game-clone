@@ -9,10 +9,25 @@ namespace Hexfall
         private Queue<GameObject> pooledHexes;
         [SerializeField] private GameObject hexPrefab;
         [SerializeField] private GridSettings _gridSettings;
+        [SerializeField] private int sizeOffset;
 
         private void Start()
         {
-            int poolSize = _gridSettings.Width * _gridSettings.Height;
+            InitializePool();
+        }
+
+        public GameObject GetPooledObject()
+        {
+            GameObject hexGO = pooledHexes.Dequeue();
+
+            pooledHexes.Enqueue(hexGO);
+
+            return hexGO;
+        }
+
+        private void InitializePool()
+        {
+            int poolSize = (_gridSettings.Width * _gridSettings.Height) + sizeOffset;
             pooledHexes = new Queue<GameObject>();
 
             for (int i = 0; i < poolSize; i++)

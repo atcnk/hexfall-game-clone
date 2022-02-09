@@ -216,6 +216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1494501226}
   - component: {fileID: 1494501227}
+  - component: {fileID: 1494501228}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -251,3 +252,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hexPrefab: {fileID: 9133848785051379527, guid: d303bd41dfcaddc4eb35af736cf52942, type: 3}
   _gridSettings: {fileID: 11400000, guid: fcd05b6eeef981a48a67793199e6535a, type: 2}
+  sizeOffset: 3
+--- !u!114 &1494501228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494501225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a5d88bf222180498688bef7fba1eb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gridSettings: {fileID: 11400000, guid: fcd05b6eeef981a48a67793199e6535a, type: 2}
+  _objectPool: {fileID: 1494501227}
+  _xPosOffset: 0.8
+  _yPosOffset: 0.9
