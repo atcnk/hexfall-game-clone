@@ -14,3 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _width: 8
   _height: 9
+  _hexesColors:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0.9829346, g: 1, b: 0, a: 1}
+  - {r: 0.023534894, g: 1, b: 0, a: 1}
+  - {r: 0.79879856, g: 0, b: 1, a: 1}
+  - {r: 0, g: 0.92939377, b: 1, a: 1}
